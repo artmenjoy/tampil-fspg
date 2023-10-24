@@ -1,80 +1,39 @@
 <div class="container">
+
+
+
 	<div class="row justify-content-center">
-		<div class="col-lg-10">
-
-			<h2 class="mt-4">Sekarang Tampil</h2>
-			<h3 class="mt-2">LOMBA VG SERI B</h3>
-			<table class="table table-responsive">
-				<tr>
-					<th>BERSIAP</th>
-					<th>PERSIAPAN 1</th>
-					<th>PERSIAPAN 2</th>
-					<th>VERIFIKASI</th>
-					<!-- <th>MEDITASI</th> -->
-					<th>SEDANG TAMPIL</th>
-				</tr>
-				<div>
-					<tr id="tampilkan">
-
-
-					</tr>
+		<div class="col mt-4">
+			<!-- test -->
+			<div class="card">
+				<div class="card-header">
+					PESERTA VOKAL GRUP SERI B - GMIM GETSEMANI
 				</div>
+				<div class="card-body">
+					<table class="table">
+						<tr>
+							<th>BERSIAP</th>
+							<th>PERSIAPAN 1</th>
+							<th>PERSIAPAN 2</th>
+							<th>VERIFIKASI</th>
+							<!-- <th>MEDITASI</th> -->
+							<th>SEDANG TAMPIL</th>
+						</tr>
+						<div>
+							<tr id="tampilkan">
 
 
-			</table>
+							</tr>
+						</div>
+
+
+					</table>
+				</div>
+			</div>
+			<!-- test -->
+			<!-- <h2 class="mt-4">Sekarang Tampil</h2>
+			<h3 class="mt-2">LOMBA VG SERI B</h3> -->
+
 		</div>
 	</div>
 </div>
-
-<!DOCTYPE HTML>
-<html>
-
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		p {
-			text-align: center;
-			font-size: 60px;
-			margin-top: 0px;
-		}
-	</style>
-</head>
-
-<body>
-
-	<p id="demo"></p>
-
-	<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-
-			// Get today's date and time
-			var now = new Date().getTime();
-
-			// Find the distance between now and the count down date
-			var distance = countDownDate - now;
-
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			// Output the result in an element with id="demo"
-			document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-				minutes + "m " + seconds + "s ";
-
-			// If the count down is over, write some text 
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("demo").innerHTML = "EXPIRED";
-			}
-		}, 1000);
-	</script>
-
-</body>
-
-</html>

@@ -14,7 +14,7 @@
 			</tr>
 
 			<tr>
-				<td><?= $data->bersiap; ?> | <a href="<?= base_url(); ?>main/setting_delete" onclick="return confirm('Hapus?')"><i class="fas fa-times-circle fa-xs" style="color: #ff0000;"></i></a></td>
+				<td><?= $data->bersiap; ?> | <a href="<?= base_url(); ?>main/setting_delete" onclick="return confirm('Hapus?')"><i class="fas fa-times-circle fa-xs" style="color: #ff0000;">undo</i></a></td>
 				<td><?= $data->persiapan_1; ?></td>
 				<td><?= $data->persiapan_2; ?></td>
 				<td><?= $data->verifikasi; ?></td>
@@ -24,12 +24,16 @@
 
 		</table>
 
-		<form action="<?= base_url(); ?>main/setting_update" method="POST">
-			<h2 class="mt-4">INPUT JEMAAT</h2>
-			<input name="baru" type="text" autofocus autocomplete="off">
-			<button class="btn" type="submit">NEXT</button>
 
-		</form>
+		<div class="input-group input-group-lg">
+
+			<form action="<?= base_url(); ?>main/setting_update" method="POST">
+				<h2 class="mt-4">INPUT JEMAAT</h2>
+				<input name="baru" type="text" autofocus autocomplete="off" class="input">
+				<button class="btn" type="submit">NEXT</button>
+
+			</form>
+		</div>
 
 
 	</div>
