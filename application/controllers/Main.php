@@ -11,8 +11,12 @@ class Main extends CI_Controller
 	}
 	public function index()
 	{
+		$param['id'] = 1;
+		$data = $this->table_kegiatan->get($param);
+		// $data['titles'] = "Tampil Peserta";
 		$this->load->view('partials/head');
-		$this->load->view('main/index');
+		$this->load->view('main/index', compact('data'));
+
 		$this->load->view('partials/foot');
 	}
 	public function login()
@@ -26,12 +30,23 @@ class Main extends CI_Controller
 	{
 		$param['id'] = 1;
 		$data = $this->table_kegiatan->get($param);
+		// $data['titles'] = "Admin Getsemani";
+
 
 		// echo print_R($data);
 		// die();
 		$this->load->view('partials/head');
 		$this->load->view('main/edit', compact('data'));
 		$this->load->view('partials/foot');
+	}
+	public function viewdata()
+	{
+		$param['id'] = 1;
+		$data = $this->table_kegiatan->get($param);
+
+		// echo print_R($data);
+		// die();
+		$this->load->view('main/dataonly', compact('data'));
 	}
 
 	public function setting_update()
