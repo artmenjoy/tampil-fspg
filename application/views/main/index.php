@@ -3,7 +3,7 @@
 
 		<h2 class="mt-4">Jadwal Tampil</h2>
 		<h3 class="mt-2">LOMBA VG SERI B</h3>
-		<table class="table table-hover" border="1">
+		<table class="table table-hover">
 			<tr>
 				<th>BERSIAP</th>
 				<th>PERSIAPAN 1</th>
