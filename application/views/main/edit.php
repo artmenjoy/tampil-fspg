@@ -5,7 +5,7 @@
 		<h3 class="mt-2">LOMBA VG SERI B</h3>
 		<table class="table table-hover">
 			<tr>
-				<th>BERSIAP</th>
+				<th>Bersiap Jemaat</th>
 				<th>PERSIAPAN 1</th>
 				<th>PERSIAPAN 2</th>
 				<th>VERIFIKASI</th>
