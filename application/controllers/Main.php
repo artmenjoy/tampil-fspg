@@ -23,7 +23,7 @@ class Main extends CI_Controller
 	{
 		$this->load->view('partials/head');
 		$this->load->view('main/login');
-		$this->load->view('partials/foot');
+		$this->load->view('partials/foot'); 
 	}
 
 	public function setting()
