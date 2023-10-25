@@ -23,7 +23,7 @@ class Main extends CI_Controller
 	{
 		$this->load->view('partials/head');
 		$this->load->view('main/login');
-		$this->load->view('partials/foot'); 
+		$this->load->view('partials/foot');
 	}
 
 	public function setting()
@@ -60,6 +60,7 @@ class Main extends CI_Controller
 		$data['persiapan_2'] = $data_awal->persiapan_1;
 		$data['verifikasi'] = $data_awal->persiapan_2;
 		$data['tampil'] = $data_awal->verifikasi;
+		$data['after'] = $data_awal->tampil;
 
 		$this->table_kegiatan->update($id, $data);
 		redirect('main/setting');
@@ -75,7 +76,9 @@ class Main extends CI_Controller
 		$data['persiapan_1'] = $data_awal->persiapan_2;
 		$data['persiapan_2'] = "$data_awal->verifikasi";
 		$data['verifikasi'] = "$data_awal->tampil";
-		$data['tampil'] = "";
+		$data['tampil'] = "$data_awal->after";
+		$data['after'] = "";
+
 
 		$this->table_kegiatan->update($id, $data);
 		redirect('main/setting');
