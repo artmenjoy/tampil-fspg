@@ -55,11 +55,14 @@ class Main extends CI_Controller
 		$data_awal = $this->table_kegiatan->get($param);
 
 		$id['id'] = 1;
-		$data['bersiap'] = $this->input->post('baru');
-		$data['persiapan_1'] = $data_awal->bersiap;
+		$data['cs_1'] = $this->input->post('baru');
+		$data['cs_2'] = $data_awal->cs_1;
+		$data['cs_3'] = $data_awal->cs_2;
+		$data['persiapan_1'] = $data_awal->cs_3;
 		$data['persiapan_2'] = $data_awal->persiapan_1;
 		$data['verifikasi'] = $data_awal->persiapan_2;
-		$data['tampil'] = $data_awal->verifikasi;
+		$data['meditasi'] = $data_awal->verifikasi;
+		$data['tampil'] = $data_awal->meditasi;
 		$data['after'] = $data_awal->tampil;
 
 		$this->table_kegiatan->update($id, $data);
@@ -72,10 +75,13 @@ class Main extends CI_Controller
 		$data_awal = $this->table_kegiatan->get($param);
 
 		$id['id'] = 1;
-		$data['bersiap'] = $data_awal->persiapan_1;
+		$data['cs_1'] = $data_awal->cs_2;
+		$data['cs_2'] = $data_awal->cs_3;
+		$data['cs_3'] = $data_awal->persiapan_1;
 		$data['persiapan_1'] = $data_awal->persiapan_2;
 		$data['persiapan_2'] = "$data_awal->verifikasi";
-		$data['verifikasi'] = "$data_awal->tampil";
+		$data['verifikasi'] = "$data_awal->meditasi";
+		$data['meditasi'] = "$data_awal->tampil";
 		$data['tampil'] = "$data_awal->after";
 		$data['after'] = "";
 
