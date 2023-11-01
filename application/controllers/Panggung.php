@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Main extends CI_Controller
+class Panggung extends CI_Controller
 {
 	function __construct()
 	{
@@ -13,8 +13,10 @@ class Main extends CI_Controller
 	{
 		$param['id'] = 1;
 		$data = $this->table_kegiatan->get($param);
-		$d['titles'] = "Tampil Peserta";
-		$this->load->view('partials/head', $d);
+		$param['judul'] = "a";
+
+		// $data['titles'] = "Tampil Peserta";
+		$this->load->view('partials/head');
 		$this->load->view('main/index', compact('data'));
 
 		$this->load->view('partials/foot');

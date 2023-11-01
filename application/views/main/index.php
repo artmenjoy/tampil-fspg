@@ -7,19 +7,17 @@
 			<!-- card -->
 			<div class="card">
 				<div class="card-header">
-					PESERTA VOKAL GRUP SERI B - GMIM GETSEMANI
+					<h2>PESERTA VOKAL GRUP SERI B - GMIM GETSEMANI</h2>
 				</div>
 				<div class="card-body table-responsive">
-					<table class="table table-stripped hover"id="tampilkan">
-						
-						
+					<table class="table table-stripped hover" id="tampilkan">
 
 
 					</table>
 				</div>
 			</div>
 			<!-- card -->
-			
+
 
 		</div>
 	</div>
