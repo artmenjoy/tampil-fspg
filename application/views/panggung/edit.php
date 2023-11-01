@@ -6,29 +6,20 @@
 		<table class="table table-hover">
 
 
+
+
 			<tr>
-				<th>Coming Soon 1</th>
-				<th>Coming Soon 2</th>
-				<th>Coming Soon 3</th>
-				<th>PERSIAPAN 1</th>
-				<th>PERSIAPAN 2</th>
-				<th>VERIFIKASI</th>
-				<th>MEDITASI</th>
-				<th>SEDANG TAMPIL</th>
+				<th>Bersiap Panggung 2</th>
+				<th>Bersiap Panggung 1</th>
+				<th>Sedang Naik Panggung</th>
 			</tr>
 
 			<tr>
 				<td><?= $data->cs_1; ?> | <a href="<?= base_url(); ?>main/setting_delete" onclick="return confirm('Hapus?')"><i class="badge-danger badge">hapus</i></a></td>
 				<td><?= $data->cs_2; ?></td>
 				<td><?= $data->cs_3; ?></td>
-				<td><?= $data->persiapan_1; ?></td>
-				<td><?= $data->persiapan_2; ?></td>
-				<td><?= $data->verifikasi; ?></td>
-				<td><?= $data->meditasi; ?></td>
-				<td><?= $data->tampil; ?></td>
 
 			</tr>
-
 
 
 		</table>

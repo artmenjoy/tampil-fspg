@@ -13,18 +13,10 @@ class Panggung extends CI_Controller
 	{
 		$param['id'] = 1;
 		$data = $this->table_kegiatan->get($param);
-		$param['judul'] = "a";
-
-		// $data['titles'] = "Tampil Peserta";
-		$this->load->view('partials/head');
-		$this->load->view('main/index', compact('data'));
-
-		$this->load->view('partials/foot');
-	}
-	public function login()
-	{
-		$this->load->view('partials/head');
-		$this->load->view('main/login');
+		$d['titles'] = "Antrian Test Panggung";
+		$d['act'] = "panggung";
+		$this->load->view('partials/head', $d);
+		$this->load->view('main/index', compact('data'), $d);
 		$this->load->view('partials/foot');
 	}
 
@@ -32,13 +24,8 @@ class Panggung extends CI_Controller
 	{
 		$param['id'] = 1;
 		$data = $this->table_kegiatan->get($param);
-		// $data['titles'] = "Admin Getsemani";
-
-
-		// echo print_R($data);
-		// die();
 		$this->load->view('partials/head');
-		$this->load->view('main/edit', compact('data'));
+		$this->load->view('panggung/edit', compact('data'));
 		$this->load->view('partials/foot');
 	}
 	public function viewdata()
@@ -46,9 +33,7 @@ class Panggung extends CI_Controller
 		$param['id'] = 1;
 		$data = $this->table_kegiatan->get($param);
 
-		// echo print_R($data);
-		// die();
-		$this->load->view('main/dataonly', compact('data'));
+		$this->load->view('main/dataonly_panggung', compact('data'));
 	}
 
 	public function setting_update()
