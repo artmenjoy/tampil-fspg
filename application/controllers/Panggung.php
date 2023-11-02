@@ -24,7 +24,9 @@ class Panggung extends CI_Controller
 	{
 		$param['id'] = 1;
 		$data = $this->table_kegiatan->get($param);
-		$this->load->view('partials/head');
+		$d['titles'] = "Admin Test Panggung";
+
+		$this->load->view('partials/head', $d);
 		$this->load->view('panggung/edit', compact('data'));
 		$this->load->view('partials/foot');
 	}
@@ -53,7 +55,7 @@ class Panggung extends CI_Controller
 		$data['after'] = $data_awal->tampil;
 
 		$this->table_kegiatan->update($id, $data);
-		redirect('main/setting');
+		redirect('panggung/setting');
 	}
 
 	public function setting_delete()
@@ -74,6 +76,6 @@ class Panggung extends CI_Controller
 
 
 		$this->table_kegiatan->update($id, $data);
-		redirect('main/setting');
+		redirect('panggung/setting');
 	}
 }

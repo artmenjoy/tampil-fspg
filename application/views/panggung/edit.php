@@ -15,7 +15,7 @@
 			</tr>
 
 			<tr>
-				<td><?= $data->cs_1; ?> | <a href="<?= base_url(); ?>main/setting_delete" onclick="return confirm('Hapus?')"><i class="badge-danger badge">hapus</i></a></td>
+				<td><?= $data->cs_1; ?> | <a href="<?= base_url(); ?>panggung/setting_delete" onclick="return confirm('Hapus?')"><i class="badge-danger badge">hapus</i></a></td>
 				<td><?= $data->cs_2; ?></td>
 				<td><?= $data->cs_3; ?></td>
 
@@ -27,7 +27,7 @@
 
 		<div class="input-group input-group-lg">
 
-			<form action="<?= base_url(); ?>main/setting_update" method="POST">
+			<form action="<?= base_url(); ?>panggung/setting_update" method="POST">
 				<h2 class="mt-4">Input Peserta</h2>
 				<input name="baru" type="text" autofocus autocomplete="off" class="input">
 				<button class="btn badge-primary" type="submit">Input</button>

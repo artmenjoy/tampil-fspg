@@ -30,8 +30,10 @@ class Main extends CI_Controller
 	public function setting()
 	{
 		$param['id'] = 1;
+		$d['titles'] = "Admin Kegiatan";
+
 		$data = $this->table_kegiatan->get($param);
-		$this->load->view('partials/head');
+		$this->load->view('partials/head', $d);
 		$this->load->view('main/edit', compact('data'));
 		$this->load->view('partials/foot');
 	}
